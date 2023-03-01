@@ -1,16 +1,14 @@
+import { TodoForm } from './TodoForm/TodoForm';
+import { TodotList } from './TodotList/TodotList';
+
+import { Container, ContainerTitle } from './App.styled';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <ContainerTitle>To Do List</ContainerTitle>
+      <TodoForm />
+      <TodotList />
+    </Container>
   );
 };
